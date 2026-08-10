@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface-950 text-surface-300 antialiased;
+  }
+
+  ::selection {
+    @apply bg-brand-600/30 text-white;
+  }
+}
+
+@layer components {
+  /* The frosted panel used throughout the product, so the site looks like the
+     thing it is selling. */
+  .glass {
+    @apply bg-white/[0.03] border border-white/10 backdrop-blur-sm;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-brand-600
+           px-5 py-3 font-medium text-white transition-colors
+           hover:bg-brand-500 focus:outline-none focus:ring-2
+           focus:ring-brand-500 focus:ring-offset-2 focus:ring-offset-surface-950;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg
+           border border-white/15 bg-white/5 px-5 py-3 font-medium text-surface-100
+           transition-colors hover:bg-white/10 focus:outline-none focus:ring-2
+           focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-surface-950;
+  }
+
+  .section {
+    @apply mx-auto w-full max-w-6xl px-6;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.14em] text-brand-400;
+  }
+}
+
+/* Respect people who don't want motion. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
