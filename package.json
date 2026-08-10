@@ -2,7 +2,7 @@
   "name": "vibepsa-site",
   "version": "1.0.0",
   "private": true,
-  "description": "Marketing site for VibePSA — vibepsa.com",
+  "description": "Marketing site for VibePSA — vibepsa.net",
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "next build",

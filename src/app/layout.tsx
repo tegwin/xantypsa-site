@@ -9,7 +9,7 @@ const DESCRIPTION =
   'yourself, own your data, pay nobody per seat.';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://vibepsa.com'),
+  metadataBase: new URL('https://vibepsa.net'),
   title: {
     default: 'VibePSA — Open Source PSA for MSPs',
     template: '%s — VibePSA',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'VibePSA — Open Source PSA for MSPs',
     description: DESCRIPTION,
-    url: 'https://vibepsa.com',
+    url: 'https://vibepsa.net',
     siteName: 'VibePSA',
     type: 'website',
     locale: 'en_GB',

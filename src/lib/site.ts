@@ -6,7 +6,7 @@
 
 export const site = {
   name: 'VibePSA',
-  domain: 'vibepsa.com',
+  domain: 'vibepsa.net',
   tagline: 'Open Source PSA',
   // Honest today: this is a young project open to contributions, rather than
   // the product of an existing community. Deliberately unattributed to any
@@ -22,9 +22,9 @@ export const site = {
   // demo call-to-action as "coming soon" rather than a dead link — flip it to
   // true once the instance is up.
   demoReady: false,
-  demoUrl: 'https://demo.vibepsa.com',
-  demoEmail: 'demo@vibepsa.com',
+  demoUrl: 'https://demo.vibepsa.net',
+  demoEmail: 'demo@vibepsa.net',
   demoPassword: 'demo',
 
-  contactEmail: 'hello@vibepsa.com',
+  contactEmail: 'hello@vibepsa.net',
 } as const;
