@@ -1,5 +1,5 @@
 # ============================================================
-# VibePSA marketing site
+# XantyPSA marketing site
 # ============================================================
 # Deliberately plain: no database, no secrets, nothing to configure. Built as a
 # container rather than left to auto-detection so it deploys identically on

@@ -1,8 +1,8 @@
 {
-  "name": "vibepsa-site",
+  "name": "xantypsa-site",
   "version": "1.0.0",
   "private": true,
-  "description": "Marketing site for VibePSA — vibepsa.net",
+  "description": "Marketing site for XantyPSA — vibepsa.net",
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "next build",

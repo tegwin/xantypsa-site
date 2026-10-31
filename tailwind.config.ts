@@ -2,7 +2,7 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
-  // Brand tokens are copied from the VibePSA app so the site and the product
+  // Brand tokens are copied from the XantyPSA app so the site and the product
   // share one palette. Keep them in step if the app's change.
   darkMode: 'class',
   theme: {
