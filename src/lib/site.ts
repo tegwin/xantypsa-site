@@ -6,7 +6,7 @@
 
 export const site = {
   name: 'Xanty PSA',
-  domain: 'xantypsa.com',
+  domain: 'xanty.net',
   tagline: 'Open Source PSA, built for smaller MSPs',
   // Honest today: this is a young project open to contributions, rather than
   // the product of an existing community. Deliberately unattributed to any
@@ -22,9 +22,9 @@ export const site = {
   // demo call-to-action as "coming soon" rather than a dead link - flip it to
   // true once the instance is up.
   demoReady: false,
-  demoUrl: 'https://demo.xantypsa.com',
-  demoEmail: 'demo@xantypsa.com',
+  demoUrl: 'https://demo.xanty.net',
+  demoEmail: 'demo@xanty.net',
   demoPassword: 'demo',
 
-  contactEmail: 'hello@xantypsa.com',
+  contactEmail: 'hello@xanty.net',
 } as const;

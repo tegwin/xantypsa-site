@@ -10,7 +10,7 @@ const DESCRIPTION =
   'yourself, own your data, pay nobody per seat.';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://xantypsa.com'),
+  metadataBase: new URL('https://xanty.net'),
   title: {
     default: 'Xanty PSA - Open Source PSA for Smaller MSPs',
     template: '%s - Xanty PSA',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Xanty PSA - Open Source PSA for Smaller MSPs',
     description: DESCRIPTION,
-    url: 'https://xantypsa.com',
+    url: 'https://xanty.net',
     siteName: 'Xanty PSA',
     type: 'website',
     locale: 'en_GB',
