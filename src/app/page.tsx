@@ -218,11 +218,11 @@ export default function Home() {
                   <ul className="space-y-1.5 font-mono text-xs text-surface-400">
                     <li className="flex justify-between gap-4">
                       <span>Northwind Ltd</span>
-                      <span className="text-red-400">−£1,240 (−31%)</span>
+                      <span className="text-red-400">-£1,240 (-31%)</span>
                     </li>
                     <li className="flex justify-between gap-4">
                       <span>Baxter &amp; Co</span>
-                      <span className="text-red-400">−£310 (−4%)</span>
+                      <span className="text-red-400">-£310 (-4%)</span>
                     </li>
                   </ul>
                   <p className="text-surface-400">
