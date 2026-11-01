@@ -21,14 +21,14 @@ FROM node:20-bookworm-slim AS runner
 WORKDIR /app
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
-# A default only — the platform injects its own PORT and the server reads it.
+# A default only - the platform injects its own PORT and the server reads it.
 ENV PORT=3000
 ENV HOSTNAME=0.0.0.0
 
 RUN groupadd --system --gid 1001 nodejs \
  && useradd --system --uid 1001 --gid nodejs nextjs
 
-# No public/ directory — the site ships no static assets of its own.
+# No public/ directory - the site ships no static assets of its own.
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
