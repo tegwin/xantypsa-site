@@ -5,7 +5,7 @@
 // updated without hunting through components.
 
 export const site = {
-  name: 'XantyPSA',
+  name: 'Xanty PSA',
   domain: 'vibepsa.net',
   tagline: 'Open Source PSA',
   // Honest today: this is a young project open to contributions, rather than

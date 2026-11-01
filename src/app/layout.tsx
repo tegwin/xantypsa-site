@@ -11,8 +11,8 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   metadataBase: new URL('https://vibepsa.net'),
   title: {
-    default: 'XantyPSA — Open Source PSA for MSPs',
-    template: '%s — XantyPSA',
+    default: 'Xanty PSA — Open Source PSA for MSPs',
+    template: '%s — Xanty PSA',
   },
   description: DESCRIPTION,
   keywords: [
@@ -26,16 +26,16 @@ export const metadata: Metadata = {
     'MSP ticketing',
   ],
   openGraph: {
-    title: 'XantyPSA — Open Source PSA for MSPs',
+    title: 'Xanty PSA — Open Source PSA for MSPs',
     description: DESCRIPTION,
     url: 'https://vibepsa.net',
-    siteName: 'XantyPSA',
+    siteName: 'Xanty PSA',
     type: 'website',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'XantyPSA — Open Source PSA for MSPs',
+    title: 'Xanty PSA — Open Source PSA for MSPs',
     description: DESCRIPTION,
   },
   robots: { index: true, follow: true },

@@ -23,22 +23,22 @@ const AI_POINTS = [
   'Bring your own key — Anthropic, OpenAI, or anything OpenAI-compatible including a local Ollama model.',
   'An assistant on every screen that already knows your schema, so it answers from your data rather than guessing.',
   'Ask in plain English: "which contracts lost money last quarter?" — it writes the query and explains the answer.',
-  'An MCP server, so you can drive XantyPSA from Claude Desktop instead of clicking through screens.',
+  'An MCP server, so you can drive Xanty PSA from Claude Desktop instead of clicking through screens.',
   'Read-only by default. Writes are opt-in, and the assistant confirms before it creates anything.',
 ];
 
 const FAQ = [
   {
     q: 'Is it really free?',
-    a: `Yes. XantyPSA is ${site.license} licensed — download it, run it, modify it, use it commercially, for nothing. There is no seat count, no feature gate, and no paid tier holding anything back. If you self-host, your only cost is the hosting itself.`,
+    a: `Yes. Xanty PSA is ${site.license} licensed — download it, run it, modify it, use it commercially, for nothing. There is no seat count, no feature gate, and no paid tier holding anything back. If you self-host, your only cost is the hosting itself.`,
   },
   {
     q: 'What does AGPL mean for me as an MSP?',
-    a: 'If you run XantyPSA to operate your own MSP — the normal case — it means nothing at all. Use it however you like. The licence only bites if you modify XantyPSA and offer that modified version to others as a hosted service, in which case you have to publish your changes. It exists to stop someone taking this and selling it back as closed software.',
+    a: 'If you run Xanty PSA to operate your own MSP — the normal case — it means nothing at all. Use it however you like. The licence only bites if you modify Xanty PSA and offer that modified version to others as a hosted service, in which case you have to publish your changes. It exists to stop someone taking this and selling it back as closed software.',
   },
   {
     q: 'Where does my data live?',
-    a: 'Wherever you put it. XantyPSA runs against your own PostgreSQL database — Supabase, Neon, RDS, or Postgres on a box under your desk. Nothing phones home. There is no vendor telemetry and no central service that has to be up for your PSA to work.',
+    a: 'Wherever you put it. Xanty PSA runs against your own PostgreSQL database — Supabase, Neon, RDS, or Postgres on a box under your desk. Nothing phones home. There is no vendor telemetry and no central service that has to be up for your PSA to work.',
   },
   {
     q: 'Can I migrate off it later?',
@@ -46,7 +46,7 @@ const FAQ = [
   },
   {
     q: 'Is it production-ready?',
-    a: 'Be realistic about where this is. The modules described here are built and working, but XantyPSA is young and has not been through years of hardening across hundreds of MSPs the way the commercial products have. Trial it alongside what you run today before you trust it with your billing.',
+    a: 'Be realistic about where this is. The modules described here are built and working, but Xanty PSA is young and has not been through years of hardening across hundreds of MSPs the way the commercial products have. Trial it alongside what you run today before you trust it with your billing.',
   },
   {
     q: 'How do I get help?',
@@ -128,7 +128,7 @@ export default function Home() {
               tedious. Every renewal is a negotiation you are on the wrong side of.
             </p>
             <p className="mt-4 text-lg text-surface-400">
-              XantyPSA is the other option: run it yourself, read every line, change what
+              Xanty PSA is the other option: run it yourself, read every line, change what
               you don&apos;t like, and add engineers without opening a spreadsheet to work
               out what it will cost.
             </p>
@@ -204,7 +204,7 @@ export default function Home() {
             <div className="glass rounded-xl p-6">
               <div className="flex items-center gap-2 border-b border-white/10 pb-3">
                 <Sparkles className="h-4 w-4 text-brand-400" aria-hidden />
-                <span className="text-sm font-medium text-white">XantyPSA Assistant</span>
+                <span className="text-sm font-medium text-white">Xanty PSA Assistant</span>
               </div>
               <div className="space-y-4 pt-5 text-sm">
                 <p className="ml-auto w-fit max-w-[85%] rounded-2xl rounded-br-sm bg-brand-600 px-4 py-2.5 text-white">
@@ -363,7 +363,7 @@ npm run dev
                 Built in the open
               </h2>
               <p className="mt-4 text-lg text-surface-400">
-                XantyPSA started at an MSP consultancy that got tired of watching clients
+                Xanty PSA started at an MSP consultancy that got tired of watching clients
                 get squeezed at renewal. It is {site.license} licensed and developed in
                 public — every commit, every issue, every decision.
               </p>
@@ -434,7 +434,7 @@ npm run dev
             <div className="mt-9 flex flex-wrap justify-center gap-3">
               <a href={site.github} className="btn-primary">
                 <Github className="h-4 w-4" aria-hidden />
-                Get XantyPSA
+                Get Xanty PSA
               </a>
               <a href="#self-host" className="btn-secondary">Read the install guide</a>
             </div>
