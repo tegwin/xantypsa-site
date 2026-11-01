@@ -84,8 +84,9 @@ export default function Home() {
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-surface-400">
               A complete Professional Services Automation platform - service desk, CRM,
-              contracts, quoting, invoicing, projects and time. Open source, self-hosted,
-              and free of per-seat pricing forever.
+              contracts, quoting, invoicing, projects and time - designed specifically
+              for smaller MSPs. Open source, self-hosted, and free of per-seat pricing
+              forever.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center justify-center gap-3">

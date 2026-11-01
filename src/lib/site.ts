@@ -7,7 +7,7 @@
 export const site = {
   name: 'Xanty PSA',
   domain: 'xantypsa.com',
-  tagline: 'Open Source PSA',
+  tagline: 'Open Source PSA, built for smaller MSPs',
   // Honest today: this is a young project open to contributions, rather than
   // the product of an existing community. Deliberately unattributed to any
   // company so the project stands on its own.
