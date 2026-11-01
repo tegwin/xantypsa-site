@@ -52,14 +52,14 @@ echo
 echo "3. Hardcoded passwords, and credentials printed to a user (tests included)"
 HITS=$(files | xargs grep -nIE \
   '(password|passwd|pwd)[[:space:]]*[:=][[:space:]]*['"'"'"][^'"'"'"]{1,}['"'"'"]|Password:[[:space:]]+[A-Za-z0-9!@#$%^&*]{3,}' \
-  2>/dev/null | grep -viE 'example|placeholder|Unchanged|form\.|request\.|\.get\(|%s|\{\{|None|type=|name=|label|VARCHAR|autocomplete|a_password|a_secret|deliberately')
+  2>/dev/null | grep -viE 'example|placeholder|Unchanged|form\.|request\.|\.get\(|%s|\{\{|None|type=|name=|label|VARCHAR|autocomplete|a_password|a_secret|deliberately|Password: *(string|number|boolean|any)\b')
 [ -n "$HITS" ] && report "$HITS" || echo "   none"
 
 echo
 echo "4. Connection strings with credentials in them"
 HITS=$(files | xargs grep -nIE \
   '(mysql|postgres|postgresql|mongodb|redis|amqp)(\+[a-z]+)?://[^:/[:space:]]+:[^@[:space:]]+@' \
-  2>/dev/null | grep -viE 'user:password|USER:PASS|<|example')
+  2>/dev/null | grep -viE 'user:password|USER:PASS|<|example' | grep -vE '[$][{]')
 [ -n "$HITS" ] && report "$HITS" || echo "   none"
 
 # A company domain beside the word "password" trips GitGuardian on its own,

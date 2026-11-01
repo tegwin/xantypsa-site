@@ -13,16 +13,16 @@ const MODULES = [
   { icon: Receipt, name: 'Quotes & Invoices', body: 'Line-item quote builder with PDF output and a customer-facing portal. Invoices with payments, recurring schedules and ready-to-bill queues.' },
   { icon: FolderKanban, name: 'Projects', body: 'Tasks, milestones and budget tracking, with time booked against them feeding straight into profitability.' },
   { icon: Clock, name: 'Timesheets', body: 'Log time against tickets or projects. Cost is snapshotted at write time, so changing a rate never rewrites history.' },
-  { icon: BarChart3, name: 'Reporting', body: 'Revenue, utilisation, ticket and project reports — plus true profitability: revenue minus engineer cost minus service cost.' },
+  { icon: BarChart3, name: 'Reporting', body: 'Revenue, utilisation, ticket and project reports - plus true profitability: revenue minus engineer cost minus service cost.' },
   { icon: Shield, name: 'Users & Roles', body: 'Full RBAC, per-tenant engineer cost rates, enforced two-factor, and admin impersonation with an audit record.' },
 ];
 
 const REPLACES = ['Autotask', 'HaloPSA', 'ConnectWise', 'Syncro', 'Atera'];
 
 const AI_POINTS = [
-  'Bring your own key — Anthropic, OpenAI, or anything OpenAI-compatible including a local Ollama model.',
+  'Bring your own key - Anthropic, OpenAI, or anything OpenAI-compatible including a local Ollama model.',
   'An assistant on every screen that already knows your schema, so it answers from your data rather than guessing.',
-  'Ask in plain English: "which contracts lost money last quarter?" — it writes the query and explains the answer.',
+  'Ask in plain English: "which contracts lost money last quarter?" - it writes the query and explains the answer.',
   'An MCP server, so you can drive Xanty PSA from Claude Desktop instead of clicking through screens.',
   'Read-only by default. Writes are opt-in, and the assistant confirms before it creates anything.',
 ];
@@ -30,19 +30,19 @@ const AI_POINTS = [
 const FAQ = [
   {
     q: 'Is it really free?',
-    a: `Yes. Xanty PSA is ${site.license} licensed — download it, run it, modify it, use it commercially, for nothing. There is no seat count, no feature gate, and no paid tier holding anything back. If you self-host, your only cost is the hosting itself.`,
+    a: `Yes. Xanty PSA is ${site.license} licensed - download it, run it, modify it, use it commercially, for nothing. There is no seat count, no feature gate, and no paid tier holding anything back. If you self-host, your only cost is the hosting itself.`,
   },
   {
     q: 'What does AGPL mean for me as an MSP?',
-    a: 'If you run Xanty PSA to operate your own MSP — the normal case — it means nothing at all. Use it however you like. The licence only bites if you modify Xanty PSA and offer that modified version to others as a hosted service, in which case you have to publish your changes. It exists to stop someone taking this and selling it back as closed software.',
+    a: 'If you run Xanty PSA to operate your own MSP - the normal case - it means nothing at all. Use it however you like. The licence only bites if you modify Xanty PSA and offer that modified version to others as a hosted service, in which case you have to publish your changes. It exists to stop someone taking this and selling it back as closed software.',
   },
   {
     q: 'Where does my data live?',
-    a: 'Wherever you put it. Xanty PSA runs against your own PostgreSQL database — Supabase, Neon, RDS, or Postgres on a box under your desk. Nothing phones home. There is no vendor telemetry and no central service that has to be up for your PSA to work.',
+    a: 'Wherever you put it. Xanty PSA runs against your own PostgreSQL database - Supabase, Neon, RDS, or Postgres on a box under your desk. Nothing phones home. There is no vendor telemetry and no central service that has to be up for your PSA to work.',
   },
   {
     q: 'Can I migrate off it later?',
-    a: "It is a documented PostgreSQL schema you already own, and the full SQL is in the repo. Take a pg_dump and it's yours. Being easy to leave is the point — that's the problem with the incumbents.",
+    a: "It is a documented PostgreSQL schema you already own, and the full SQL is in the repo. Take a pg_dump and it's yours. Being easy to leave is the point - that's the problem with the incumbents.",
   },
   {
     q: 'Is it production-ready?',
@@ -50,7 +50,7 @@ const FAQ = [
   },
   {
     q: 'How do I get help?',
-    a: `GitHub issues for bugs and feature requests, and discussions for questions. There is no support SLA — it is an open source project, not a product with a contract behind it. If you need commercial support, get in touch at ${site.contactEmail}.`,
+    a: `GitHub issues for bugs and feature requests, and discussions for questions. There is no support SLA - it is an open source project, not a product with a contract behind it. If you need commercial support, get in touch at ${site.contactEmail}.`,
   },
 ];
 
@@ -83,7 +83,7 @@ export default function Home() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-surface-400">
-              A complete Professional Services Automation platform — service desk, CRM,
+              A complete Professional Services Automation platform - service desk, CRM,
               contracts, quoting, invoicing, projects and time. Open source, self-hosted,
               and free of per-seat pricing forever.
             </p>
@@ -188,7 +188,7 @@ export default function Home() {
               </h2>
               <p className="mt-4 text-lg text-surface-400">
                 Not a chatbot in the corner. The assistant is given your actual schema, so
-                it answers from your data — and it is scoped to your tenant at the database
+                it answers from your data - and it is scoped to your tenant at the database
                 level, not by asking it nicely.
               </p>
               <ul className="mt-7 space-y-3.5">
@@ -244,7 +244,7 @@ export default function Home() {
               </h2>
               <p className="mt-4 text-lg text-surface-400">
                 You need Node 18 or newer and a PostgreSQL database. Deploy it to Vercel,
-                a VPS, or your own hardware — it is a standard Next.js app with a Prisma
+                a VPS, or your own hardware - it is a standard Next.js app with a Prisma
                 schema, not an appliance.
               </p>
 
@@ -314,7 +314,7 @@ npm run dev
                 Have a click around first
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-lg text-surface-400">
-                A full instance loaded with a fictional MSP&apos;s data — tickets, contracts,
+                A full instance loaded with a fictional MSP&apos;s data - tickets, contracts,
                 invoices and all. Nothing to install, and you cannot break anything that
                 matters.
               </p>
@@ -335,7 +335,7 @@ npm run dev
                   </div>
                   <p className="mt-5 text-sm text-surface-500">
                     Resets nightly. Everyone shares one instance, so treat it as a
-                    showroom rather than a sandbox — and don&apos;t put anything real in it.
+                    showroom rather than a sandbox - and don&apos;t put anything real in it.
                   </p>
                 </>
               ) : (
@@ -345,8 +345,7 @@ npm run dev
                   </span>
                   <p className="mx-auto mt-5 max-w-md text-sm text-surface-500">
                     The hosted demo isn&apos;t up yet. In the meantime, the repository has a
-                    seed script that fills a local install with the same sample data —
-                    clone it and you have the demo on your own machine in minutes.
+                    seed script that fills a local install with the same sample data - clone it and you have the demo on your own machine in minutes.
                   </p>
                 </>
               )}
@@ -365,11 +364,11 @@ npm run dev
               <p className="mt-4 text-lg text-surface-400">
                 Xanty PSA started at an MSP consultancy that got tired of watching clients
                 get squeezed at renewal. It is {site.license} licensed and developed in
-                public — every commit, every issue, every decision.
+                public - every commit, every issue, every decision.
               </p>
               <p className="mt-4 text-surface-400">
                 It is early, and it shows in places. If you run an MSP and something here
-                is wrong or missing, that is exactly the feedback worth having — an issue
+                is wrong or missing, that is exactly the feedback worth having - an issue
                 describing how your business actually works is as useful as a pull request.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -385,7 +384,7 @@ npm run dev
 
             <dl className="grid grid-cols-2 gap-5">
               {[
-                { k: site.license, v: 'Licence — free for commercial use' },
+                { k: site.license, v: 'Licence - free for commercial use' },
                 { k: '58', v: 'Database tables, fully documented' },
                 { k: '£0', v: 'Per seat, per month, forever' },
                 { k: '100%', v: 'Of the source, not an open core' },
@@ -454,7 +453,7 @@ npm run dev
                 V
               </span>
               <span className="font-semibold text-white">{site.name}</span>
-              <span className="text-sm text-surface-500">— {site.tagline}</span>
+              <span className="text-sm text-surface-500"> - {site.tagline}</span>
             </div>
             <p className="mt-2.5 text-sm text-surface-500">{site.byline}</p>
           </div>

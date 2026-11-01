@@ -2,7 +2,7 @@
   "name": "xantypsa-site",
   "version": "1.0.0",
   "private": true,
-  "description": "Marketing site for XantyPSA — vibepsa.net",
+  "description": "Marketing site for Xanty PSA (xantypsa.com)",
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "next build",
